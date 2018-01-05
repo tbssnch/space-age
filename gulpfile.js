@@ -77,7 +77,7 @@ gulp.task('serve', function() {
       baseDir: "./",
       index: "index.html"
     }
-});
+  });
 
 gulp.watch(['src/js/*.js'], ['jsBuild']);
 gulp.watch(['bower.json'], ['bowerBuild']);
