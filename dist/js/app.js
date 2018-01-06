@@ -21,13 +21,16 @@ var SpaceAge = exports.SpaceAge = function () {
   _createClass(SpaceAge, [{
     key: "ageCalculate",
     value: function ageCalculate() {
-
       return this.age * yearSeconds;
     }
   }]);
 
   return SpaceAge;
 }();
+
+var SpaceDates = exports.SpaceDates = function SpaceDates(dates) {
+  _classCallCheck(this, SpaceDates);
+};
 
 },{}],2:[function(require,module,exports){
 "use strict";

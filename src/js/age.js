@@ -8,3 +8,9 @@ export class SpaceAge {
     return this.age * yearSeconds;
     }
 }
+
+export class SpaceDates {
+  constructor(dates) {
+
+  }
+}
