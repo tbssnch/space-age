@@ -52,7 +52,7 @@ gulp.task('bowerCSS', function () {
 
 gulp.task('bower', ['bowerJS', 'bowerCSS']);
 
-gulp.task('build', ['clean'] function() {
+gulp.task('build', ['clean'], function() {
   if(buildProduction) {
     gulp.start('minifyScripts');
   } else {
@@ -68,7 +68,7 @@ gulp.task('jshint', function() {
     .pipe(jshint.reporter('default'));
 });
 
-gulp.task('jsBuild', ['jsBrowserify', 'jshint']), function() {
+gulp.task('jsBuild', ['jsBrowserify', 'jshint'], function() {
   browserSync.reload();
 });
 
@@ -85,7 +85,7 @@ gulp.task('htmlBuild', function() {
 gulp.task('serve', function() {
   browserSync.init({
     server: {
-      baseDir: "./",
+      baseDir: "./dist/",
       index: "index.html"
     }
   });
