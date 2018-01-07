@@ -25,12 +25,15 @@ describe('SpaceAge', function() {
 describe('PlanetAge', function () {
   let newPlanetAge;
 
-  beforeEach(function () {
-    newPlanetAge = new PlanetAge(28);
-  });
 
   it('should take the age inputted by the user and divide it by .24 to output their age on Mercury', function () {
+    newPlanetAge = new PlanetAge('mercury');
     expect(newPlanetAge.planetCalculate()).toEqual("117")
+  })
+
+  it('should take the age inputted by the user and divide it by .62 to output their age on Venus', function () {
+    newPlanetAge = new PlanetAge('venus');
+    expect(newPlanetAge.planetCalculate()).toEqual("45")
   })
 
 });

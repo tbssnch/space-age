@@ -24,7 +24,16 @@ export class PlanetAge {
     this.planet = planet;
   }
   planetCalculate() {
-      return (28 / 0.24).toFixed();
 
+    if (this.planet === "mercury") {
+
+      return (28 / 0.24).toFixed();
+    } else if (this.planet === "venus") {
+      return (28 / 0.62).toFixed();
+    }
+    else {
+
+      return 'your dead';
+    }
   }
 }
