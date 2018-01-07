@@ -33,6 +33,8 @@ export class PlanetAge {
     else if (this.planet === "Mars") {
       return (28 * 1.88).toFixed();
     }
-
+    else if (this.planet === "Jupiter") {
+      return (28 * 11.86).toFixed();
+    }
   }
 }

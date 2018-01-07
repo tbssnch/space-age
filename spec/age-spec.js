@@ -41,4 +41,10 @@ describe('PlanetAge', function () {
     newPlanetAge = new PlanetAge('Mars');
     expect(newPlanetAge.planetCalculate()).toEqual("53")
   })
+
+  it('should take the age inputted by the user and multiply it by 11.86 to output their age on Jupiter',
+  function () {
+    newPlanetAge = new PlanetAge('Jupiter');
+    expect(newPlanetAge.planetCalculate()).toEqual("332")
+  })
 });
