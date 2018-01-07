@@ -1,5 +1,6 @@
 const yearSeconds = 31536000;
 
+
 export class SpaceAge {
   constructor(age) {
     this.age = age;
@@ -9,8 +10,11 @@ export class SpaceAge {
     }
 }
 
-export class SpaceDates {
-  constructor(dates) {
-
+export class SpaceDate {
+  constructor(date) {
+    this.date = date;
+  }
+  dateCalculate() {
+    return moment().diff(this.date, "s");
   }
 }
