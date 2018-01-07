@@ -27,13 +27,18 @@ describe('PlanetAge', function () {
 
 
   it('should take the age inputted by the user and divide it by .24 to output their age on Mercury', function () {
-    newPlanetAge = new PlanetAge('mercury');
+    newPlanetAge = new PlanetAge('Mercury');
     expect(newPlanetAge.planetCalculate()).toEqual("117")
   })
 
   it('should take the age inputted by the user and divide it by .62 to output their age on Venus', function () {
-    newPlanetAge = new PlanetAge('venus');
+    newPlanetAge = new PlanetAge('Venus');
     expect(newPlanetAge.planetCalculate()).toEqual("45")
   })
 
+  it('should take the age inputted by the user and multiply it by 1.88 to output their age on Mars',
+  function () {
+    newPlanetAge = new PlanetAge('Mars');
+    expect(newPlanetAge.planetCalculate()).toEqual("53")
+  })
 });

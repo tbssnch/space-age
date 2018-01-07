@@ -23,13 +23,15 @@ export class PlanetAge {
   constructor(planet) {
     this.planet = planet;
   }
+
   planetCalculate() {
-
-    if (this.planet === "mercury") {
-
+    if (this.planet === "Mercury") {
       return (28 / 0.24).toFixed();
-    } else if (this.planet === "venus") {
+    } else if (this.planet === "Venus") {
       return (28 / 0.62).toFixed();
+    }
+    else if (this.planet === "Mars") {
+      return (28 * 1.88).toFixed();
     }
 
   }
