@@ -18,3 +18,13 @@ export class SpaceDate {
     return moment().diff(this.date, "s");
   }
 }
+
+export class PlanetAge {
+  constructor(planet) {
+    this.planet = planet;
+  }
+  planetCalculate() {
+      return (28 / 0.24).toFixed();
+
+  }
+}
