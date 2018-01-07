@@ -31,9 +31,6 @@ export class PlanetAge {
     } else if (this.planet === "venus") {
       return (28 / 0.62).toFixed();
     }
-    else {
 
-      return 'your dead';
-    }
   }
 }
