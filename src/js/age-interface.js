@@ -1,5 +1,5 @@
-import { SpaceAge, SpaceDate } from './../src/js/age.js';
-// User Interface Logic:
+import { SpaceAge, SpaceDate, PlanetAge, Planet } from './../src/js/age.js';
+
 $(function() {
   $("#age-form").submit(function(event) {
     event.preventDefault();
@@ -17,5 +17,17 @@ $(function() {
     let thisSpaceDate = new SpaceDate(dateInput);
     let dateOutput = thisSpaceDate.dateCalculate();
     $("#date-output").text(dateOutput);
+  });
+});
+
+$(function() {
+  $("#planet-form").submit(function(event) {
+    event.preventDefault();
+    let planetAgeInput = $("#planet-age-input").val();
+    let planetInput = $("#planet-input").val();
+    let thisPlanetAge = new PlanetAge(planetAgeInput);
+    let thisPlanet = new Planet(planetInput);
+    let planetOutput = thisPlanetAge.planetCalculate();
+    $("#planet-output").text(planetOutput);
   });
 });

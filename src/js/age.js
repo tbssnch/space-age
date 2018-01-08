@@ -19,22 +19,28 @@ export class SpaceDate {
   }
 }
 
-export class PlanetAge {
+export class Planet {
   constructor(planet) {
     this.planet = planet;
+  }
+}
+
+export class PlanetAge {
+  constructor(planetAge) {
+    this.planetAge = planetAge;
   }
 
   planetCalculate() {
     if (this.planet === "Mercury") {
-      return (28 / 0.24).toFixed();
+      return (this.planetAge / 0.24).toFixed();
     } else if (this.planet === "Venus") {
-      return (28 / 0.62).toFixed();
+      return (this.planetAge / 0.62).toFixed();
     }
     else if (this.planet === "Mars") {
-      return (28 * 1.88).toFixed();
+      return (this.planetAge * 1.88).toFixed();
     }
     else if (this.planet === "Jupiter") {
-      return (28 * 11.86).toFixed();
+      return (this.planetAge * 11.86).toFixed();
     }
   }
 }
