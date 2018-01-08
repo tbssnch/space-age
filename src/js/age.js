@@ -7,6 +7,7 @@ export class SpaceAge {
   }
   ageCalculate() {
     return this.age * yearSeconds;
+    console.log():
     }
 }
 
