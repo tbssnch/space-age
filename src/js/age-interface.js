@@ -8,9 +8,7 @@ $(function() {
     const ageOutput = thisSpaceAge.ageCalculate();
     $("#age-output").text(ageOutput);
   });
-});
 
-$(function() {
   $("#date-form").submit(function(event) {
     event.preventDefault();
     const dateInput = $("#date-input").val();
@@ -18,16 +16,13 @@ $(function() {
     const dateOutput = thisSpaceDate.dateCalculate();
     $("#date-output").text(dateOutput);
   });
-});
 
-$(function() {
   $("#planet-form").submit(function(event) {
     event.preventDefault();
     const planetAgeInput = parseInt($("#planet-age-input").val());
     const planetInput = $("#planet-input").val();
-    const thisPlanet = new Planet(planetInput);
-    const thisPlanetAge = new PlanetAge(planetAgeInput);
-    const planetOutput = thisPlanetAge.planetCalculate();
+    const userPlanetAge = new PlanetAge(planetAgeInput);
+    const planetOutput = userPlanetAge.planetCalculate(planetInput);
     $("#planet-output").text(planetOutput);
   });
 });

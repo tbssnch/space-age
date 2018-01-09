@@ -31,12 +31,10 @@ export class PlanetAge {
       return (this.planetAge / 0.24).toFixed();
     } else if (planet === "Venus") {
       return (this.planetAge / 0.62).toFixed();
-    }
-    else if (planet === "Mars") {
-      return (this.planetAge * 1.88).toFixed();
-    }
-    else if (planet === "Jupiter") {
-      return (this.planetAge * 11.86).toFixed();
+    } else if (planet === "Mars") {
+      return (this.planetAge / 1.88).toFixed();
+    } else if (planet === "Jupiter") {
+      return (this.planetAge / 11.86).toFixed();
     }
   }
 }
